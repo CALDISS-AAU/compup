@@ -1,26 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head><meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<title>compup_intro-to-python</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
-<title>compup_intro-to-python slides</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
-<!-- General and theme style sheets -->
-<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
-
-<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-<script>
-if( window.location.search.match( /print-pdf/gi ) ) {
-        var link = document.createElement( 'link' );
-        link.rel = 'stylesheet';
-        link.type = 'text/css';
-        document.getElementsByTagName( 'head' )[0].appendChild( link );
-}
-</script>
 
 <style type="text/css">
     pre { line-height: 125%; }
@@ -14474,122 +14460,20 @@ a.anchor-link {
 .highlight  {
     margin: 0.4em;
 }
-.jp-Notebook {
-    padding: 0;
+
+/* Input area styling */
+.jp-InputArea {
+    overflow: hidden;
 }
-:root {
-    --jp-ui-font-size1: 20px;       /* instead of 14px */
-    --jp-content-font-size1: 20px;  /* instead of 14px */
-    --jp-code-font-size: 19px;      /* instead of 13px */
-    --jp-cell-prompt-width: 110px;  /* instead of 64px */
+
+.jp-InputArea-editor {
+    overflow: hidden;
 }
+
 @media print {
   body {
     margin: 0;
   }
-}
-</style>
-
-<style type="text/css">
-/* Overrides of notebook CSS for static HTML export */
-.reveal {
-  font-size: 160%;
-}
-.reveal pre {
-  width: inherit;
-  padding: 0.4em;
-  margin: 0px;
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-}
-.reveal pre code {
-  padding: 0px;
-}
-.reveal section img {
-  border: 0px solid black;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0);
-}
-.reveal .slides {
-  text-align: left;
-}
-.reveal.fade {
-  opacity: 1;
-}
-.reveal .progress {
-  position: static;
-}
-
-div.jp-InputArea-editor {
-  padding: 0.06em;
-}
-
-div.code_cell {
-  background-color: transparent;
-}
-
-div.output_area pre {
-  font-family: monospace, sans-serif;
-  font-size: 80%;
-}
-
-div.jp-OutputPrompt {
-  /* 5px right shift to account for margin in parent container */
-  margin: 5px 5px 0 0;
-}
-
-/* Reveal navigation controls */
-
-.reveal .controls .navigate-left,
-.reveal .controls .navigate-left.enabled {
-  border-right-color: #727272;
-}
-.reveal .controls .navigate-left.enabled:hover,
-.reveal .controls .navigate-left.enabled.enabled:hover {
-  border-right-color: #dfdfdf;
-}
-.reveal .controls .navigate-right,
-.reveal .controls .navigate-right.enabled {
-  border-left-color: #727272;
-}
-.reveal .controls .navigate-right.enabled:hover,
-.reveal .controls .navigate-right.enabled.enabled:hover {
-  border-left-color: #dfdfdf;
-}
-.reveal .controls .navigate-up,
-.reveal .controls .navigate-up.enabled {
-  border-bottom-color: #727272;
-}
-.reveal .controls .navigate-up.enabled:hover,
-.reveal .controls .navigate-up.enabled.enabled:hover {
-  border-bottom-color: #dfdfdf;
-}
-.reveal .controls .navigate-down,
-.reveal .controls .navigate-down.enabled {
-  border-top-color: #727272;
-}
-.reveal .controls .navigate-down.enabled:hover,
-.reveal .controls .navigate-down.enabled.enabled:hover {
-  border-top-color: #dfdfdf;
-}
-.reveal .progress span {
-  background: #727272;
-}
-
-/* Scrollbars */
-
-::-webkit-scrollbar
-{
-  width: 6px;
-  height: 6px;
-}
-::-webkit-scrollbar *
-{
-  background:transparent;
-}
-::-webkit-scrollbar-thumb
-{
-  background: #727272 !important;
 }
 </style>
 
@@ -14626,20 +14510,14 @@ div.jp-OutputPrompt {
     }
     init_mathjax();
     </script>
-    <!-- End of mathjax configuration --><!-- Reveal Theme -->
-<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/simple.css" id="theme">
-
-</head>
-
+    <!-- End of mathjax configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 
-<div class="reveal">
-<div class="slides"><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Introduction-to-Python-(on-UCloud)">Introduction to Python (on UCloud)<a class="anchor-link" href="#Introduction-to-Python-(on-UCloud)">&#182;</a></h1><h3 id="CompUp-workshop,-October-27th-2021"><em>CompUp workshop, October 27th 2021</em><a class="anchor-link" href="#CompUp-workshop,-October-27th-2021">&#182;</a></h3>
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Purpose-of-the-Python-workshops">Purpose of the Python workshops<a class="anchor-link" href="#Purpose-of-the-Python-workshops">&#182;</a></h2><ul>
@@ -14653,7 +14531,7 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Content-of-today's-workshop">Content of today's workshop<a class="anchor-link" href="#Content-of-today's-workshop">&#182;</a></h2><ul>
@@ -14668,7 +14546,7 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Teaching-format">Teaching format<a class="anchor-link" href="#Teaching-format">&#182;</a></h2><ul>
@@ -14683,7 +14561,7 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Introduction-to-UCloud">Introduction to UCloud<a class="anchor-link" href="#Introduction-to-UCloud">&#182;</a></h1><h2 id="What-is-%22UCloud%22?">What is "UCloud"?<a class="anchor-link" href="#What-is-%22UCloud%22?">&#182;</a></h2><ul>
@@ -14701,7 +14579,7 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-UCloud">Introduction to UCloud<a class="anchor-link" href="#Introduction-to-UCloud">&#182;</a></h2><h3 id="App-based?">App-based?<a class="anchor-link" href="#App-based?">&#182;</a></h3><ul>
@@ -14712,7 +14590,7 @@ div.jp-OutputPrompt {
 <p><strong><em>You have 1000 DKK on your account corresponding to 2907 hours of running a machine non-stop with 23 GB RAM and 4 VCPUs</em></strong></p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-UCloud">Introduction to UCloud<a class="anchor-link" href="#Introduction-to-UCloud">&#182;</a></h2><h3 id="Navigating-UCloud">Navigating UCloud<a class="anchor-link" href="#Navigating-UCloud">&#182;</a></h3><p>(live demo)</p>
@@ -14720,7 +14598,7 @@ div.jp-OutputPrompt {
 <h3 id="Launching-your-first-app">Launching your first app<a class="anchor-link" href="#Launching-your-first-app">&#182;</a></h3><p>(live demo)</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="What-is-Python?">What is Python?<a class="anchor-link" href="#What-is-Python?">&#182;</a></h1><ul>
@@ -14740,7 +14618,7 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="What-is-Python">What is Python<a class="anchor-link" href="#What-is-Python">&#182;</a></h2><h3 id="Characteristics-of-the-Python-programming-language">Characteristics of the Python programming language<a class="anchor-link" href="#Characteristics-of-the-Python-programming-language">&#182;</a></h3><h3 id="Python-som-programmeringssprog">Python som programmeringssprog<a class="anchor-link" href="#Python-som-programmeringssprog">&#182;</a></h3><p><strong>Python is "general purpose"</strong></p>
@@ -14748,7 +14626,7 @@ div.jp-OutputPrompt {
 <p><strong>Python is "cross-platform"</strong></p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Working-with-Python-(in-JupyterLab)">Working with Python (in JupyterLab)<a class="anchor-link" href="#Working-with-Python-(in-JupyterLab)">&#182;</a></h2><ul>
@@ -14767,7 +14645,7 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-The-Python-language">Python basics: The Python language<a class="anchor-link" href="#Python-basics:-The-Python-language">&#182;</a></h2><p>Working with Python means working almost entirely with codes written in the Python language.</p>
@@ -14776,7 +14654,7 @@ div.jp-OutputPrompt {
 <p>Python, for example, understands mathematical expressions:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
@@ -14790,7 +14668,7 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-The-Python-language">Python basics: The Python language<a class="anchor-link" href="#Python-basics:-The-Python-language">&#182;</a></h2><p>When Python does not understand our commands, it will return an error:</p>
@@ -14841,7 +14719,7 @@ div.jp-OutputPrompt {
 <p>Python returns a <code>SyntaxError</code> from the code above because the command does not comply with Python conventions (that is not the only problem with the code but it is the first problem that is encountered when interpreting the code).</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-The-Python-language">Python basics: The Python language<a class="anchor-link" href="#Python-basics:-The-Python-language">&#182;</a></h2><p>Working with Python means working with functions!</p>
@@ -14886,13 +14764,13 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Use <code>#</code> to write comments in your code. Text following a <code>#</code> is ignored by Python.</p>
 
 </div>
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Variables-in-Python">Python basics: Variables in Python<a class="anchor-link" href="#Python-basics:-Variables-in-Python">&#182;</a></h2><ul>
@@ -14916,13 +14794,13 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Variables-in-Python">Python basics: Variables in Python<a class="anchor-link" href="#Python-basics:-Variables-in-Python">&#182;</a></h2><h3 id="Defining-variables">Defining variables<a class="anchor-link" href="#Defining-variables">&#182;</a></h3><p>Variables are defined using <code>=</code></p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
@@ -14936,7 +14814,7 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
@@ -14971,7 +14849,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
@@ -14985,7 +14863,7 @@ div.jp-OutputPrompt {
 </div>
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
@@ -15020,20 +14898,20 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Using <code>' '</code> or <code>" "</code> denotes that the code should be read as text.</p>
 
 </div>
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Variables-in-Python">Python basics: Variables in Python<a class="anchor-link" href="#Python-basics:-Variables-in-Python">&#182;</a></h2><p>Note that Python reads code very literally!</p>
 <p>Python differentiates between upper and lower case:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
@@ -15087,19 +14965,19 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The code above returns a <code>NameError</code>. This error usually occurs when the variable or function has not been defined (or imported).</p>
 
 </div>
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Variables-in-Python">Python basics: Variables in Python<a class="anchor-link" href="#Python-basics:-Variables-in-Python">&#182;</a></h2><h3 id="Changing-a-variable">Changing a variable<a class="anchor-link" href="#Changing-a-variable">&#182;</a></h3><p>As a rule variables are not altered by using them:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
@@ -15137,13 +15015,13 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The variable has to be re-assigned if the content should be changed:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
@@ -15179,7 +15057,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Variables-in-Python">Python basics: Variables in Python<a class="anchor-link" href="#Python-basics:-Variables-in-Python">&#182;</a></h2><h3 id="Naming-variables">Naming variables<a class="anchor-link" href="#Naming-variables">&#182;</a></h3><p>Variables can be named almost anything but a good rule of thumb is to use names that are indicative of what the variable contains.</p>
@@ -15196,14 +15074,14 @@ div.jp-OutputPrompt {
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Types-of-variables">Python basics: Types of variables<a class="anchor-link" href="#Python-basics:-Types-of-variables">&#182;</a></h2><p>Python distinguishes between different types of variables.</p>
 <p>A variable is stored as a <em>type</em>. The type denotes what kind of variable it is and affects what operations are possible.</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Types-of-variables">Python basics: Types of variables<a class="anchor-link" href="#Python-basics:-Types-of-variables">&#182;</a></h2><h3 id="Numeric-and-character-types">Numeric and character types<a class="anchor-link" href="#Numeric-and-character-types">&#182;</a></h3><p>As you work with python, you will encounter a lot of different types. For now we will be focusing on two of the more common ones:</p>
@@ -15216,13 +15094,13 @@ div.jp-OutputPrompt {
 <p><em>Numbers enclosed in <code>''</code> or <code>""</code> are therefore stored as strings, as python interprets it as text!</em></p>
 
 </div>
-</div></section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Python has to be told that something is text as Python would otherwise interpret it as an existing variable.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
@@ -15262,13 +15140,13 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Note that python can interpret multiplying and adding text:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
@@ -15307,7 +15185,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
@@ -15346,7 +15224,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
@@ -15383,7 +15261,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Types-of-variables">Python basics: Types of variables<a class="anchor-link" href="#Python-basics:-Types-of-variables">&#182;</a></h2><h3 id="Casting-types">Casting types<a class="anchor-link" href="#Casting-types">&#182;</a></h3><p>The type of a variable can be examined with <code>type(variable)</code>.</p>
@@ -15395,7 +15273,7 @@ div.jp-OutputPrompt {
 <p>Python will always try to "guess" the type. If python guesses wrong, you can tell python what type it should be (if possible).</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
@@ -15431,7 +15309,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
@@ -15467,7 +15345,7 @@ div.jp-OutputPrompt {
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="EXERCISE:-Variables-and-types">EXERCISE: Variables and types<a class="anchor-link" href="#EXERCISE:-Variables-and-types">&#182;</a></h2><p>Create the variables: <code>my_number1</code> and <code>my_number2</code>.</p>
@@ -15480,7 +15358,7 @@ div.jp-OutputPrompt {
 <p>Try dividing the numbers again. If you have corrected the type correctly, it should return the number <code>1.75</code>.</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Functions">Python basics: Functions<a class="anchor-link" href="#Python-basics:-Functions">&#182;</a></h2><p>Essential part of programming is using functions.</p>
@@ -15496,7 +15374,7 @@ div.jp-OutputPrompt {
 <p><code>print()</code> and <code>type()</code> are both functions.</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Methods">Python basics: Methods<a class="anchor-link" href="#Python-basics:-Methods">&#182;</a></h2><p>Besides functions Python also contains "methods". Like functions, methods accepts some kind of input and returns an output.</p>
@@ -15508,7 +15386,7 @@ div.jp-OutputPrompt {
 <p>Strings fx have a lot of methods associated:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
@@ -15547,13 +15425,13 @@ hello
 
 </div>
 
-</div></div></section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Notice that methods as a rule do not change the variable.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
@@ -15588,13 +15466,13 @@ hello
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>If one tries to use methods on variables of the wrong type, an error is returned:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
@@ -15638,7 +15516,7 @@ hello
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
@@ -15651,7 +15529,7 @@ words.replace("there", "world")</code></pre>
 <hr>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Booleas">Python basics: Booleas<a class="anchor-link" href="#Python-basics:-Booleas">&#182;</a></h2><p>A large part of programming involved working with logical or boolean values. Disse er stored as the type <code>bool</code>.</p>
@@ -15659,7 +15537,7 @@ words.replace("there", "world")</code></pre>
 <p>Certain operators always returns a boolean value:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
@@ -15699,7 +15577,7 @@ words.replace("there", "world")</code></pre>
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
@@ -15707,7 +15585,7 @@ words.replace("there", "world")</code></pre>
 </ul>
 
 </div>
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Booleas">Python basics: Booleas<a class="anchor-link" href="#Python-basics:-Booleas">&#182;</a></h2><p>These operators always return a boolean value:</p>
@@ -15720,14 +15598,14 @@ a &lt; b   # Less than
 a &lt;= b  # Less than or equals</code></pre>
 
 </div>
-</div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>A lot of functinos and methods return boolean values.</p>
 <p>The method <code>.startswith()</code> returns a boolean value dependent on whether or not the string starts with a specific piece of text or not:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
@@ -15764,7 +15642,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Python-basics:-Packages">Python basics: Packages<a class="anchor-link" href="#Python-basics:-Packages">&#182;</a></h2><p>Base Python has very limited functionality. You will always have to import various packages/modules in order to perform your analysis.</p>
@@ -15773,7 +15651,7 @@ a &lt;= b  # Less than or equals</code></pre>
 <p>It is possible to either import whole modules or parts of a module.</p>
 
 </div>
-</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
@@ -15815,7 +15693,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
@@ -15833,7 +15711,7 @@ a &lt;= b  # Less than or equals</code></pre>
 </div>
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
@@ -15869,7 +15747,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-data-structures:-Lists">Basic data structures: Lists<a class="anchor-link" href="#Basic-data-structures:-Lists">&#182;</a></h2><p>So far we have looked at Python variables containing single values: a number, a word or a boolean.</p>
@@ -15877,7 +15755,7 @@ a &lt;= b  # Less than or equals</code></pre>
 <p>A list is a grouping of elements. They are created by enclosing the values in <code>[]</code>:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
@@ -15913,13 +15791,13 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Note that lists can contain variables of different types.</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
@@ -15955,14 +15833,14 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-data-structures:-Lists">Basic data structures: Lists<a class="anchor-link" href="#Basic-data-structures:-Lists">&#182;</a></h2><h3 id="Adding-to-lists">Adding to lists<a class="anchor-link" href="#Adding-to-lists">&#182;</a></h3><p>Elements can be added to the list with the method <code>append</code>.</p>
 <p><em>Note that using this method changes the contents of the list</em></p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
@@ -15998,13 +15876,13 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-data-structures:-Lists">Basic data structures: Lists<a class="anchor-link" href="#Basic-data-structures:-Lists">&#182;</a></h2><h3 id="Indexes">Indexes<a class="anchor-link" href="#Indexes">&#182;</a></h3><p>Each element in the list is assigned an index running from 0 to the number of elements - 1. We can use the index to refer to specific elements with <code>[]</code>:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
@@ -16041,13 +15919,13 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Single elements in a list can be changed by refering to their index:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
@@ -16083,14 +15961,14 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-data-structures:-Tuples">Basic data structures: Tuples<a class="anchor-link" href="#Basic-data-structures:-Tuples">&#182;</a></h2><p><em>Tuples</em> are immutable lists meaning their values cannot be changed.</p>
 <p>They are created by enclosing elements in <code>()</code>:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
@@ -16128,7 +16006,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[38]:</div>
@@ -16165,7 +16043,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
@@ -16205,14 +16083,14 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-data-structures:-Dictionaries">Basic data structures: Dictionaries<a class="anchor-link" href="#Basic-data-structures:-Dictionaries">&#182;</a></h2><p>Dictionaries consist of a range of key-value pairs.</p>
 <p>Dictionaries are defined using <code>{}</code>:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[40]:</div>
@@ -16226,7 +16104,7 @@ a &lt;= b  # Less than or equals</code></pre>
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Each key-value pair is defined with a key in the form of a string followed by <code>:</code>.</p>
@@ -16235,7 +16113,7 @@ a &lt;= b  # Less than or equals</code></pre>
 <p>Dictionaries do not have an index as they are not seen as having an order. On refers to a value through the key (which has to be unique):</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[41]:</div>
@@ -16270,13 +16148,13 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-data-structures:-Dictionaries">Basic data structures: Dictionaries<a class="anchor-link" href="#Basic-data-structures:-Dictionaries">&#182;</a></h2><p>Pairs can be added by just adding a key that has not been used:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[42]:</div>
@@ -16319,7 +16197,7 @@ a &lt;= b  # Less than or equals</code></pre>
 <p>Key has to be unique. Reusing the same key vill simply overwrite it.</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
@@ -16356,7 +16234,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
@@ -16364,7 +16242,7 @@ a &lt;= b  # Less than or equals</code></pre>
 <hr>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-For-loops">Basic control structures: For loops<a class="anchor-link" href="#Basic-control-structures:-For-loops">&#182;</a></h2><p>In Python (and many other programming languages), "loops" are used to repeat commands.</p>
@@ -16375,13 +16253,13 @@ a &lt;= b  # Less than or equals</code></pre>
 </ul>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-For-loops">Basic control structures: For loops<a class="anchor-link" href="#Basic-control-structures:-For-loops">&#182;</a></h2><p>Below three variables are created and stored in a list (<code>ages</code>)</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[44]:</div>
@@ -16399,13 +16277,13 @@ a &lt;= b  # Less than or equals</code></pre>
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>A for loop is used below to change the type of each of them:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
@@ -16443,7 +16321,7 @@ a &lt;= b  # Less than or equals</code></pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-For-loops">Basic control structures: For loops<a class="anchor-link" href="#Basic-control-structures:-For-loops">&#182;</a></h2><h3 id="Construction-of-a-for-loop">Construction of a for loop<a class="anchor-link" href="#Construction-of-a-for-loop">&#182;</a></h3><p>A for loop consists of two parts:</p>
@@ -16457,7 +16335,7 @@ a &lt;= b  # Less than or equals</code></pre>
 <p>Commandoes are written on the lines following <code>:</code> - Identation matters here!</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
@@ -16467,14 +16345,14 @@ a &lt;= b  # Less than or equals</code></pre>
 <pre><code>words = ["potato", "cat", "scrumptious", "monitor", "carpenter"]</code></pre>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-While-loops">Basic control structures: While loops<a class="anchor-link" href="#Basic-control-structures:-While-loops">&#182;</a></h2><p>While loops repeat a command while a condition is true.</p>
 <p>Example:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
@@ -16516,7 +16394,7 @@ loopet kører videre
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-While-loops">Basic control structures: While loops<a class="anchor-link" href="#Basic-control-structures:-While-loops">&#182;</a></h2><h4 id="Construction-of-a-while-loop">Construction of a while loop<a class="anchor-link" href="#Construction-of-a-while-loop">&#182;</a></h4><p>A while loop consists of two parts:</p>
@@ -16529,13 +16407,13 @@ loopet kører videre
 <p>Loop contains line that adds 1 to <code>x</code>. That way <code>x</code> exceeds 5 after four iterations - DANGER: Infinite loop if this is not included!</p>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-If-statements">Basic control structures: If statements<a class="anchor-link" href="#Basic-control-structures:-If-statements">&#182;</a></h2><p>If statements are codechunks, where certain commands are only run, if a condition is met:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[47]:</div>
@@ -16575,7 +16453,7 @@ loopet kører videre
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-If-statements">Basic control structures: If statements<a class="anchor-link" href="#Basic-control-structures:-If-statements">&#182;</a></h2><p>The example consists of two blocks: an if-block and an else-block</p>
@@ -16586,14 +16464,14 @@ loopet kører videre
 </ul>
 
 </div>
-</div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>An else-block is run in all cases where the if-condition is not meant. Therefore it is not strictly necessary.</p>
 <p>If left out, nothing happens if the if-condition is not met:</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[48]:</div>
@@ -16610,7 +16488,7 @@ loopet kører videre
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Basic-control-structures:-If-statements">Basic control structures: If statements<a class="anchor-link" href="#Basic-control-structures:-If-statements">&#182;</a></h2><h3 id="Multiple-if-conditions**">Multiple if-conditions**<a class="anchor-link" href="#Multiple-if-conditions**">&#182;</a></h3><p>It is possible to specify multiple conditions with <code>elif</code> ("else if").</p>
@@ -16618,7 +16496,7 @@ loopet kører videre
 <p>Continues until it reaches a statement evaluating true or reaches an else-block:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[49]:</div>
@@ -16660,7 +16538,7 @@ loopet kører videre
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <hr>
@@ -16682,7 +16560,7 @@ loopet kører videre
 <hr>
 
 </div>
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><p><em>Pandas</em> is a module that allows you to create dataframes in python: A spreadsheet-like data structure for data with rows and columns.</p>
@@ -16691,7 +16569,7 @@ loopet kører videre
 <p>Below a subset of the danish section of the 2014 European Social Survey (<a href="http://www.europeansocialsurvey.org/">http://www.europeansocialsurvey.org/</a>) is imported:</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[50]:</div>
@@ -16707,13 +16585,13 @@ loopet kører videre
 </div>
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><h3 id="Inspecting-DataFrames">Inspecting DataFrames<a class="anchor-link" href="#Inspecting-DataFrames">&#182;</a></h3><p>Use the method <code>.head()</code> to inspect the first 5 rows of the data.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[51]:</div>
@@ -16841,13 +16719,13 @@ loopet kører videre
 
 </div>
 
-</div></div><div class="fragment">
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>Inspect column names with method .columns</p>
 
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[52]:</div>
@@ -16892,13 +16770,13 @@ loopet kører videre
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><p>See key summary statistics using <code>.descibe()</code>. (n, mean, std, min, max, quartiles).</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
@@ -17026,14 +16904,14 @@ loopet kører videre
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><h3 id="Slicing-rows-and-selecting-columns">Slicing rows and selecting columns<a class="anchor-link" href="#Slicing-rows-and-selecting-columns">&#182;</a></h3><p>Selecting rows is refered to as <em>slicing</em>. Rows can be selected by their index using <code>[]</code>. It excludes the last index.</p>
 <p>Columns can be selected the same way by refering to the column name.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
@@ -17113,7 +16991,7 @@ loopet kører videre
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
@@ -17161,7 +17039,7 @@ Name: alcfreq, Length: 1502, dtype: object</pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><p>The method <code>.loc[]</code> is used for subsetting the data. First rows, then columns. Columns have to be specified by their name.</p>
@@ -17170,7 +17048,7 @@ Name: alcfreq, Length: 1502, dtype: object</pre>
 <p><em>NOTE</em>: <code>.loc[]</code> is also used for recoding specific values.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
@@ -17210,7 +17088,7 @@ Name: alcfreq, dtype: object</pre>
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
@@ -17286,7 +17164,7 @@ Name: alcfreq, dtype: object</pre>
 
 </div>
 
-</div></div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[58]:</div>
@@ -17357,13 +17235,13 @@ Name: alcfreq, dtype: object</pre>
 
 </div>
 
-</div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><h3 id="Series">Series<a class="anchor-link" href="#Series">&#182;</a></h3><p>A <code>DataFrame</code> is a type. An important subtype is a <code>series</code>: A one-dimensional datastructure with an index (like a type-specific list or a variable, as it is understood in statistics).</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[59]:</div>
@@ -17405,7 +17283,7 @@ dtype: int64
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[60]:</div>
@@ -17446,13 +17324,13 @@ dtype: int64
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>A wide range of operations can be performed on series (like variables in any other statistics software).</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[61]:</div>
@@ -17487,7 +17365,7 @@ dtype: int64
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[62]:</div>
@@ -17528,14 +17406,14 @@ dtype: bool
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><h3 id="Operations-on-dataframes">Operations on dataframes<a class="anchor-link" href="#Operations-on-dataframes">&#182;</a></h3><p>Operations can be performed on pandas series.</p>
 <p>Operations on pandas series are not restricted to pandas functions!</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[63]:</div>
@@ -17577,7 +17455,7 @@ Name: height, dtype: float64</pre>
 
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
@@ -17614,13 +17492,13 @@ Name: height, dtype: float64</pre>
 
 </div>
 
-</div></div></section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The type of a dataframe column (series) can be inspected using the attribute <code>dtypes</code>.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
@@ -17657,13 +17535,13 @@ Name: height, dtype: float64</pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><h3 id="Creating-variables">Creating variables<a class="anchor-link" href="#Creating-variables">&#182;</a></h3><p>Variables are created by refering to columns not yet in the dataframe.</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[66]:</div>
@@ -17677,7 +17555,7 @@ Name: height, dtype: float64</pre>
 </div>
 </div>
 
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[67]:</div>
@@ -17723,14 +17601,14 @@ Name: height, dtype: float64</pre>
 
 </div>
 
-</div></div></section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Introduction-to-pandas-DataFrames">Introduction to pandas DataFrames<a class="anchor-link" href="#Introduction-to-pandas-DataFrames">&#182;</a></h2><h3 id="NaN:-%22Not-a-Number%22">NaN: "Not a Number"<a class="anchor-link" href="#NaN:-%22Not-a-Number%22">&#182;</a></h3><p><code>NaN</code> is the Python equivalent of missing.</p>
 <p>Notice that Python does not treat NaN-values as larger or smaller than zero. NaN-values do not have a value. We therefore need to use specific methods to refer to them (like <code>isnull()</code>).</p>
 
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[68]:</div>
@@ -17778,7 +17656,7 @@ Name: cgtsday, Length: 1502, dtype: bool</pre>
 
 </div>
 
-</div></div></section></section><section><section>
+</div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="EXERCISE:-DataFrames">EXERCISE: DataFrames<a class="anchor-link" href="#EXERCISE:-DataFrames">&#182;</a></h2><ol>
@@ -17790,8 +17668,6 @@ Name: cgtsday, Length: 1502, dtype: bool</pre>
 </ol>
 
 </div>
-</div></section></section>
-</div>
 </div>
 </body>
 
@@ -17800,55 +17676,5 @@ Name: cgtsday, Length: 1502, dtype: bool</pre>
 
 
 
-
-<script>
-require(
-    {
-      // it makes sense to wait a little bit when you are loading
-      // reveal from a cdn in a slow connection environment
-      waitSeconds: 15
-    },
-    [
-      "https://unpkg.com/reveal.js@4.0.2/dist/reveal.js",
-      "https://unpkg.com/reveal.js@4.0.2/plugin/notes/notes.js"
-    ],
-
-    function(Reveal, RevealNotes){
-        // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-        Reveal.initialize({
-            controls: true,
-            progress: true,
-            history: true,
-            transition: "slide",
-            plugins: [RevealNotes]
-        });
-
-        var update = function(event){
-          if(MathJax.Hub.getAllJax(Reveal.getCurrentSlide())){
-            MathJax.Hub.Rerender(Reveal.getCurrentSlide());
-          }
-        };
-
-        Reveal.addEventListener('slidechanged', update);
-
-        function setScrollingSlide() {
-            var scroll = false
-            if (scroll === true) {
-              var h = $('.reveal').height() * 0.95;
-              $('section.present').find('section')
-                .filter(function() {
-                  return $(this).height() > h;
-                })
-                .css('height', 'calc(95vh)')
-                .css('overflow-y', 'scroll')
-                .css('margin-top', '20px');
-            }
-        }
-
-        // check and set the scrolling slide every time the slide change
-        Reveal.addEventListener('slidechanged', setScrollingSlide);
-    }
-);
-</script>
 
 </html>
