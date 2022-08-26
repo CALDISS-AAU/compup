@@ -1,0 +1,10 @@
+## HOW TO WORK WITH THE NLP NOTEBOOK ##
+
+1. Launch a JupyterLab app with the folder containing the "nlp-ws.zip" file
+2. When the app is running, go to JupyterLab via "Open Interface"
+3. Open a terminal inside JupyterLab by clicking "Terminal"
+4. In the terminal, write the following two commands:
+	- cd compup_nlp_20220112	[assuming your folder is called compup_nlp_20220112 - otherwise change to match folder name]
+	- unzip nlp-ws.zip && bash setup.sh	[assuming the zip-file is called nlp-ws.zip - otherwise change to match name of zip-file]
+5. Find the notebook inside the unzipped "notebooks" folder
+6. Start running code!
